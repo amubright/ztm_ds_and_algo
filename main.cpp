@@ -1,11 +1,12 @@
-#include <iostream>
 #include "include/53_gi_find_pairs.h"
 #include "include/54_has_common_items.h"
 #include "include/68_my_array.h"
 #include "include/70_reverse_string.h"
+#include "include/72_merge_sorted_arrays.h"
+#include "include/vector_utils.h"
+#include <iostream>
 
-int main() 
-{
+int main() {
   // 53. Google Interview - Find pairs with sum
   // std::vector<int> arr = {1, 2, 5, 3};
   // bool hasPair = hasPairWithSum (arr, 8);
@@ -44,7 +45,14 @@ int main()
   // arr.print();
 
   // 70. Reverse a string
-  std::string inputStr("Hi, I'm Amutha");
-  reverseString(inputStr);
-  std::cout << inputStr << std::endl;
+  // std::string inputStr("Hi, I'm Amutha");
+  // reverseString(inputStr);
+  // std::cout << inputStr << std::endl;
+
+  // 72. Merge Sorted Arrays
+  std::vector<int32_t> arr1{4, 6, 30};
+  std::vector<int32_t> arr2{0, 3, 4, 31};
+  std::vector<int32_t> resArr;
+  mergeSortedArrays(resArr, arr1, arr2);
+  print(resArr);
 }
