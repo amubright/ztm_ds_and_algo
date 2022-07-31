@@ -37,3 +37,6 @@ https://www.youtube.com/watch?v=fpnE6UAfbtU
 
 Computer Memory:
 https://statmath.wu.ac.at/courses/data-analysis/itdtHTML/node55.html
+
+Array Vs LinkedList
+https://www.youtube.com/watch?v=DyG9S9nAlUM&ab_channel=Computerphile
