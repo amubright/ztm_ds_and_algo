@@ -5,6 +5,8 @@
 #include "include/72_merge_sorted_arrays.h"
 #include "include/80_hash_table.h"
 #include "include/85_first_recurring_char.h"
+#include "include/95_linked_list.h"
+#include "include/105_doubly_linked_list.h"
 #include "include/vector_utils.h"
 #include <iostream>
 
@@ -70,14 +72,51 @@ int main() {
   // htable.keys();
 
   // 85. First Recurring Character
-  std::vector<int32_t> input { 2,3,4,5 };
-  int32_t firstElement;
-  if (true == firstRecurringChar (input, firstElement))
-  {
-    std::cout << firstElement << std::endl;
-  }
-  else
-  {
-    std::cout << "undefined" << std::endl;
-  }
+  // std::vector<int32_t> input { 2,5,1,2,3,5,1,2,4 };
+  // int32_t firstElement;
+  // if (true == firstRecurringChar (input, firstElement))
+  // {
+  //   std::cout << firstElement << std::endl;
+  // }
+  // else
+  // {
+  //   std::cout << "undefined" << std::endl;
+  // }
+
+  // 95. Linked List Data Structure
+  // LinkedList llist;
+  // llist.prepend(0);
+  // llist.append(50);
+  // llist.insert(0, -10);
+  // llist.insert(3, 20);
+  // llist.insert(7, 60);
+  // llist.remove(0);
+  // llist.remove(6);
+  // llist.remove(2);
+  // llist.print();
+
+  // 105. Double Linked List Data Structure
+  // DoublyLinkedList dllist;
+  // dllist.append(0);
+  // dllist.append(50);
+  // dllist.insert(0, -10);
+  // dllist.insert(7, 60);
+  // dllist.insert(2, 20);
+  // dllist.insert(3, 30);
+  // dllist.remove(2);
+  // dllist.remove(0);
+  // dllist.remove(5);
+  //  dllist.print();
+
+  // 107. Reverse a linked list
+  LinkedList llist;
+  llist.append(0);
+  llist.append(10);
+  llist.append(20);
+  llist.append(30);
+  llist.append(40);
+  llist.append(50);
+  llist.reverse();
+  llist.insert(3, 30);
+  llist.print();
 }
