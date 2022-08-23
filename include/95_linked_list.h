@@ -3,17 +3,7 @@
 
 #include <cstdint>
 #include <cstddef>
-
-struct Node
-{
-  Node (int32_t value) : m_data(value), m_next(NULL)
-  {
-    // NTD
-  }
-
-  int32_t m_data;
-  struct Node *m_next; 
-};
+#include "node.h"
 
 class LinkedList
 {

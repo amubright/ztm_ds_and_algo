@@ -7,6 +7,9 @@
 #include "include/85_first_recurring_char.h"
 #include "include/95_linked_list.h"
 #include "include/105_doubly_linked_list.h"
+#include "include/117_stack_list.h"
+#include "include/119_stack.h"
+#include "include/121_queue_list.h"
 #include "include/vector_utils.h"
 #include <iostream>
 
@@ -109,14 +112,53 @@ int main() {
   //  dllist.print();
 
   // 107. Reverse a linked list
-  LinkedList llist;
-  llist.append(0);
-  llist.append(10);
-  llist.append(20);
-  llist.append(30);
-  llist.append(40);
-  llist.append(50);
-  llist.reverse();
-  llist.insert(3, 30);
-  llist.print();
+  // LinkedList llist;
+  // llist.append(0);
+  // llist.append(10);
+  // llist.append(20);
+  // llist.append(30);
+  // llist.append(40);
+  // llist.append(50);
+  // llist.reverse();
+  // llist.insert(3, 30);
+  // llist.print();
+
+  // 117. Stack List
+  // StackList myStackList;
+  // std::cout << myStackList.isEmpty() << std::endl;
+  // myStackList.push(50);
+  // myStackList.push(40);
+  // myStackList.push(30);
+  // myStackList.push(20);
+  // myStackList.push(10);
+  // std::cout << myStackList.peek() << std::endl;
+  // myStackList.pop();
+  // myStackList.pop();
+  // std::cout << myStackList.isEmpty() << std::endl;
+  // myStackList.print();
+
+  // 119.  Stack using Arrays/vectors
+  // Stack myStackList;
+  // std::cout << myStackList.isEmpty() << std::endl;
+  // myStackList.push("google");
+  // myStackList.push("udemy");
+  // myStackList.push("discord");
+  // myStackList.push("youtube");
+  // myStackList.push("facebook");
+  // std::cout << myStackList.peek() << std::endl;
+  // myStackList.pop();
+  // myStackList.pop();
+  // std::cout << myStackList.isEmpty() << std::endl;
+  // myStackList.print();
+
+  // 121. Queue List
+  // QueueList qlist;
+  // qlist.enqueue("google");
+  // qlist.enqueue("udemy");
+  // qlist.enqueue("discord");
+  // qlist.enqueue("youtube");
+  // std::cout << qlist.peek() << std::endl;
+  // qlist.dequeue();
+  // qlist.dequeue();
+  // qlist.print();
 }

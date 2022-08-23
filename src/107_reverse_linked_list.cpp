@@ -12,8 +12,8 @@ void LinkedList::reverse(void)
 
   while(curr != NULL)
   {
-    Node *next = curr->m_next;
-    curr->m_next = prev;
+    Node *next = curr->next;
+    curr->next = prev;
     prev = curr;
     curr = next;    
   }

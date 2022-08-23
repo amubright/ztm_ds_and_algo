@@ -10,7 +10,7 @@ void LinkedList::append(int32_t value)
   }
   else
   {
-    m_tail->m_next = newNode;
+    m_tail->next = newNode;
   }
 
   m_tail = newNode;
@@ -27,7 +27,7 @@ void LinkedList::prepend(int32_t value)
   }
   else
   {
-    newNode->m_next = m_head;
+    newNode->next = m_head;
     m_head = newNode;
   }
   ++m_length;
@@ -54,12 +54,12 @@ void LinkedList::insert(size_t index, int32_t value)
     size_t i = 0;
     while(i < (index-1))
     {
-      curr = curr->m_next;
+      curr = curr->next;
       ++i;
     }
     Node *newNode = new Node(value);
-    newNode->m_next = curr->m_next;
-    curr->m_next = newNode;
+    newNode->next = curr->next;
+    curr->next = newNode;
   }
   ++m_length;
 }
@@ -75,7 +75,7 @@ void LinkedList::remove(size_t index)
   if(index == 0)
   {
     temp = m_head;   
-    m_head = m_head->m_next; 
+    m_head = m_head->next; 
 
     if(m_length == 1)
     {
@@ -88,11 +88,11 @@ void LinkedList::remove(size_t index)
     size_t i = 0;
     while(i < (index-1))
     {
-      curr = curr->m_next;
+      curr = curr->next;
       ++i;
     }    
-    temp = curr->m_next;
-    curr->m_next = curr->m_next->m_next;
+    temp = curr->next;
+    curr->next = curr->next->next;
     
     if(index == (m_length -1))
     {
@@ -113,7 +113,7 @@ void LinkedList::print(void)
   Node* curr = m_head;
   while(curr != NULL)
   {
-    std::cout << curr->m_data << " " << std::endl;
-    curr = curr->m_next;
+    std::cout << curr->data << " " << std::endl;
+    curr = curr->next;
   }
 }
